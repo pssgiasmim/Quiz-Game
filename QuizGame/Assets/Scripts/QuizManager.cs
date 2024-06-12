@@ -14,7 +14,7 @@ public class QuizManager : MonoBehaviour
     public void SelectQuiz(Quiz.Theme themeSelected, Quiz.Dificulty dificultySelected)
     {
         Quiz quiz = quizList[Random.Range(0, quizList.Length)]; 
-        if(quiz.GetDificulty == dificultySelected && quiz.GetTheme == themeSelected)
+        if(quiz.GetDifficulty == dificultySelected && quiz.GetTheme == themeSelected)
         {
             currentQuiz = quiz;
             UIManager.instance.UpdateQuestion(currentQuiz);
@@ -25,5 +25,6 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    
     
 }

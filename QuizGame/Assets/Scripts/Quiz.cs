@@ -19,7 +19,7 @@ public class Quiz : ScriptableObject
     public string Question { get => question; }
     public string[] Answers { get => answers; }
     public Theme GetTheme { get => theme; }
-    public Dificulty GetDificulty { get => dificulty; }
+    public Dificulty GetDifficulty { get => dificulty; }
 
     public enum Theme { Portuguese, Math, Geography};
     public enum Dificulty { Easy, Medium, Hard};
