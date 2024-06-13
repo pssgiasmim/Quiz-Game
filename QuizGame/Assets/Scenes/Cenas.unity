@@ -3042,7 +3042,7 @@ MonoBehaviour:
   startButton: {fileID: 554195300}
   dificultyDropdown: {fileID: 1712839233}
   themeDropdown: {fileID: 829307450}
-  nextButton: {fileID: 0}
+  nextButton: {fileID: 1058376466}
 --- !u!4 &1192972365
 Transform:
   m_ObjectHideFlags: 0
@@ -3581,7 +3581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1464171637
 RectTransform:
   m_ObjectHideFlags: 0
