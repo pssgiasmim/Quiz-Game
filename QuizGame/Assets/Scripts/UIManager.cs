@@ -46,7 +46,7 @@ public class UIManager : MonoBehaviour
         for(int i = 0; i < answersButtons.Length; i++)
         {
             answersButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = quizSelected.Answers[i];
-            answersButtons[i].onClick.AddListener(() => nextButton.interactable = true);
+            answersButtons[i].interactable = true;
 
             answersButtons[i].GetComponent<Image>().color = Color.white;
         }

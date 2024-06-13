@@ -11,7 +11,7 @@ public class QuizManager : MonoBehaviour
 
     [SerializeField] Quiz.Theme theme;
     [SerializeField] Quiz.Dificulty dificulty;
-    
+    int rightAnswers;
 
     #region Singleton
     public static QuizManager Instance;
@@ -47,7 +47,7 @@ public class QuizManager : MonoBehaviour
             GameManager.Instance.GameOver();
         }
 
-        UIManager.instance.HighLightButton(currentQuiz.CorrectAnswer, answerSelected);
+        UIManager.instance.HighlightButton(currentQuiz.CorrectAnswer, answerSelected);
         {
 
         }
