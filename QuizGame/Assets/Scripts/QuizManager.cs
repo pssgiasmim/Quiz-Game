@@ -8,6 +8,16 @@ public class QuizManager : MonoBehaviour
     
     [SerializeField] private Quiz[] quizList;
     [SerializeField] private Quiz currentQuiz;
+    private int rightAnswer;
+
+    #region Singleton
+        public static QuizManager instance;
+
+    private void Awake()
+    {
+      instance = this;
+    }
+    #endregion
 
     [SerializeField] Quiz.Theme theme;
     [SerializeField] Quiz.Dificulty dificulty;
@@ -35,6 +45,19 @@ public class QuizManager : MonoBehaviour
             SelectQuiz(themeSelected, dificultySelected);
         }
     }
+    public void CheckAnswer(int answerSelected)
+    {
+        if (answerSelected == currentQuiz.CorrectAnswer)
+        {
+            rightAnswer++; // ou rightAnswer + 1;
+        }
+        else
+        {
+            GameManager.Instance.GameOver();
+        }
+
+        UIManager.instance.HighlightButton(currentQuiz.CorrectAnswer, answerSelected);
+    }   
 
     public void CheckAnswer(int answerSelected)
     {

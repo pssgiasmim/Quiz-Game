@@ -19,14 +19,23 @@ public class Quiz : ScriptableObject
     public string Question { get => question; }
     public string[] Answers { get => answers; }
     public Theme GetTheme { get => theme; }
+<<<<<<< Updated upstream
     public Dificulty GetDifficulty { get => dificulty; }
     public int CorrectAnswer { get => correctAnswer;}
+=======
+    public Difficulty GetDificulty { get => dificulty; }
+    public int CorrectAnswer { get => correctAnswer; }
+>>>>>>> Stashed changes
 
     public enum Theme { Portuguese, Math, Geography};
     public enum Dificulty { Easy, Medium, Hard};
 
    // public bool CheckAnswer(int answerSelected)
    // {
+<<<<<<< Updated upstream
        // return answerSelected == correctAnswer;
+=======
+      // return answerSelected == correctAnswer;
+>>>>>>> Stashed changes
    // }
 }

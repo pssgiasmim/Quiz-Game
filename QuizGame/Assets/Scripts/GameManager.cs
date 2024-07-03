@@ -18,7 +18,11 @@ public class GameManager : MonoBehaviour
 
     QuizManager quizManager;
 
+<<<<<<< Updated upstream
     public Quiz.Dificulty Dificulty { get => dificulty;}
+=======
+    public Quiz.Difficulty Difficulty { get => difficulty;}
+>>>>>>> Stashed changes
     public Quiz.Theme Theme { get => theme;}
 
     private void Start()
@@ -42,7 +46,12 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     { 
+<<<<<<< Updated upstream
         //implementação de quando o jogo o acaba.
     }
     
+=======
+    
+    }
+>>>>>>> Stashed changes
 }
